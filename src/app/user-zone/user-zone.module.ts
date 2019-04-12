@@ -5,7 +5,6 @@ import { CurrenciesComponent } from './currencies/currencies.component';
 import { UserZoneRoutingModule } from './user-zone-routing.module';
 import { CurrencyPlnComponent } from './currency-pln/currency-pln.component';
 import { CurrencyUsdComponent } from './currency-usd/currency-usd.component';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     UserZoneRoutingModule,
-    CommonModule,
-    // HttpClientModule
+    CommonModule
   ],
   providers: [
     

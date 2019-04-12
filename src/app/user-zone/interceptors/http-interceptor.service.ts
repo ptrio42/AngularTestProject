@@ -14,7 +14,6 @@ export class HttpInterceptorService implements HttpInterceptor {
       req.clone({
         headers: new HttpHeaders({
           'Angular': 'test'
-          // 'Accept': 'application/json'
         })
       })
     );

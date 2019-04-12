@@ -9,7 +9,7 @@ import { RouteMap } from './route-map';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'user-zone',
+    redirectTo: RouteMap.userZone,
     pathMatch: 'full'
   },
   {

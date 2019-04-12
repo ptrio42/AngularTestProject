@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { UserZoneModule } from './user-zone/user-zone.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpInterceptorService } from './user-zone/interceptors/http-interceptor.service';
@@ -19,7 +18,6 @@ import { HttpInterceptorService } from './user-zone/interceptors/http-intercepto
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // UserZoneModule,
     HttpClientModule,
     FormsModule
   ],

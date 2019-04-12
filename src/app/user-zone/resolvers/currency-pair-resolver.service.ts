@@ -13,7 +13,6 @@ export class CurrencyPairResolverService implements Resolve<Ticker[]> {
   constructor(private tickerService: TickerService) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Ticker[]> {
-    console.log('resolving...');
     return forkJoin(
       this.tickerService.getTicker(CurrencyCode.Bitcoin, CurrencyCode.Zloty),
       this.tickerService.getTicker(CurrencyCode.Ethereum, CurrencyCode.Zloty),

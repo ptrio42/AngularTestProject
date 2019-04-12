@@ -22,6 +22,5 @@ export class CurrencyUsdComponent implements OnInit {
 
   ngOnInit(): void {
     this.currencyCodes = CurrencyCode;
-    console.log('currencyName', this.currencyName, this.currencyCodes.Bitcoin, this.currencyName === this.currencyCodes.Bitcoin);
   }
 }
