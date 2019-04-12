@@ -1,0 +1,4 @@
+<ng-container *ngFor="let ticker of tickers">
+  <app-currency-pln [currencyName]="ticker.currency"><span [ngStyle]="{'color': ticker.currency === currencyCodes.Bitcoin ? 'yellow': 'black'}">{{ticker.bid | number:'1.2-2'}}</span></app-currency-pln>
+  <app-currency-usd [currencyName]="ticker.currency" [bidPLN]="ticker.bid"></app-currency-usd>
+</ng-container>

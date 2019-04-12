@@ -1,0 +1,13 @@
+<form #authForm="ngForm">
+  <input name="username" 
+    placeholder="username"
+    [(ngModel)]="credentials.username"
+    required>
+  <input type="password"
+    name="password"
+    placeholder="password"
+    [(ngModel)]="credentials.password"
+    required>
+</form>
+
+<button type="button" (click)="submit()" [disabled]="authForm.invalid">Login</button>
